@@ -1,0 +1,30 @@
+nav {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #5EFCE8;
+    padding: 10px ;
+    font-weight: bold;
+    row-gap: 10px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #ded3d4;
+}
+ 
+#hour{
+    background-image:url(https://i.pinimg.com/736x/b2/24/ba/b224bae0222627f98fb20ae546fe9c85.jpg);
+    background-size: cover;
+    opacity: 0.8;
+    border-radius: 20px;
+    color: #fff;
+    padding: 20px;
+}
+.Carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    /* autoplay: true, 
+    autoplaySpeed: 2000,
+    dots: true,
+    infinite: true */
+  };
