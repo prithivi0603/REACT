@@ -7,13 +7,6 @@ import Footer from '../COMPONENT/Footer';
 const Home = () => {
   return (
     <div>
-      <div
-        id="carouselExampleSlidesOnly"
-        className="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-interval="500"
-        data-bs-pause="false"
-      >
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
@@ -54,7 +47,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
 
       <div data-aos="fade-up"> <About /></div>
       <div data-aos="fade-up"> <Chef /></div>

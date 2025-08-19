@@ -17,6 +17,7 @@ const Contact = () => {
               title="The Eatery Town Location" ></iframe>
           </Col >
           <Col sm={12} md={6} lg={6} mt={5}>
+          <div data-aos="flip-right">
            <FloatingLabel controlId="floatingInput" label="Name" className="mb-3">
               <Form.Control type="text" placeholder="name" name="username" />
             </FloatingLabel>
@@ -27,6 +28,7 @@ const Contact = () => {
               <Form.Control as="textarea" placeholder="Leave a comment here" name="message" style={{ height: '100px' }} />
             </FloatingLabel>
          <center><Button variant="danger" type="submit" className="mt-3">Message</Button></center>
+         </div>     
           </Col>
         </Row>
       </Container>
