@@ -4,24 +4,29 @@ import { Card, Button } from "react-bootstrap"
 const Menu = () => {
   return (
     <>
-    <div className="text-center mt-5">
-      <h1>Our Menu</h1>
-      <p>Explore our delicious offerings below:</p>
-    </div>
+      <div className="text-center mt-5">
+        <h1>Our Menu</h1>
+        <p>Explore our delicious offerings below:</p>
+      </div>
       <Container className="mt-5 mb-5">
         <Row className="text-center mt-4 d-flex justify-content-space-between mb-5">
-          <Col sm={12} md={6} lg={3} p={5}  className="mb-5">
+          <Col sm={12} md={6} lg={3} p={5} className="mb-5">
             <Card style={{ width: '16rem' }}>
-              <Card.Img variant="top" src="https://i.pinimg.com/1200x/35/fc/47/35fc471714a7bc4e48893fe0c3be61be.jpg" />
+              <div data-aos="zoom-out-up">
+                <Card.Img variant="top" src="https://i.pinimg.com/1200x/35/fc/47/35fc471714a7bc4e48893fe0c3be61be.jpg" />
+              </div>
               <Card.Body>
                 <Card.Title>Cakes</Card.Title>
-                <Button variant="primary">Add</Button>
+                <Button  className="me-2"  variant="secondary">View Details</Button>
+                <Button variant="primary" onClick={()=>{ }}>Add to Cart</Button>
               </Card.Body>
             </Card>
           </Col>
-         <Col sm={12} md={6} lg={3} p={5} mt={4} className="mb-5">
+          <Col sm={12} md={6} lg={3} p={5} mt={4} className="mb-5">
             <Card style={{ width: '16rem' }}>
+              <div data-aos="zoom-out-up">
               <Card.Img variant="top" src="https://i.pinimg.com/736x/93/8e/f1/938ef19d548cf9931368ccc9eda3ff6e.jpg" />
+           </div>
               <Card.Body>
                 <Card.Title>Fresh Juice</Card.Title>
                 <Button variant="primary">Add</Button>
@@ -30,7 +35,9 @@ const Menu = () => {
           </Col>
           <Col sm={12} md={6} lg={3} p={5} mt={4} className="mb-5">
             <Card style={{ width: '16rem' }}>
+              <div data-aos="zoom-out-up">
               <Card.Img variant="top" src="https://i.pinimg.com/736x/2b/bd/8d/2bbd8ddef0efd324f26cadb9b0f4c17d.jpg" />
+              </div>
               <Card.Body>
                 <Card.Title>Brownies</Card.Title>
                 <Button variant="primary">Add</Button>
@@ -39,18 +46,22 @@ const Menu = () => {
           </Col>
           <Col sm={12} md={6} lg={3} p={5} mt={4} className="mb-5">
             <Card style={{ width: '16rem' }}>
+              <div data-aos="zoom-out-up">
               <Card.Img variant="top" src="https://i.pinimg.com/1200x/b2/41/ba/b241ba6d024afa21328e70a1d6ba4dd2.jpg" />
+              </div>
               <Card.Body>
                 <Card.Title>Starbucks Cold Coffee</Card.Title>
                 <Button variant="primary">Add</Button>
               </Card.Body>
             </Card>
           </Col>
-          </Row>
-          <Row className="text-center mt-5 d-flex justify-content-space-between mb-4">
+        </Row>
+        <Row className="text-center mt-5 d-flex justify-content-space-between mb-4">
           <Col sm={12} md={6} lg={3} p={5} mb={4} className="mb-5">
             <Card style={{ width: '16rem' }}>
+              <div data-aos="zoom-out-up">
               <Card.Img variant="top" src="https://i.pinimg.com/736x/ee/8a/f3/ee8af33f4fa782d924534b4b14b05247.jpg" />
+              </div>
               <Card.Body>
                 <Card.Title>Panna Cotta</Card.Title>
                 <Button variant="primary">Add</Button>
@@ -59,7 +70,9 @@ const Menu = () => {
           </Col>
           <Col sm={12} md={6} lg={3} p={5} mb={4} className="mb-5">
             <Card style={{ width: '16rem' }}>
+              <div data-aos="zoom-out-up">
               <Card.Img variant="top" src="https://i.pinimg.com/1200x/c4/73/7e/c4737e013a673e196416210867f9b1f8.jpg" />
+              </div>
               <Card.Body>
                 <Card.Title>Cappuccino</Card.Title>
                 <Button variant="primary">Add</Button>
@@ -68,7 +81,9 @@ const Menu = () => {
           </Col>
           <Col sm={12} md={6} lg={3} p={5} mb={4} className="mb-5">
             <Card style={{ width: '16rem' }}>
-              <Card.Img variant="top" src=" https://i.pinimg.com/736x/4b/e0/f7/4be0f761c47b6ff9668baab3590911bb.jpg" />
+              <div data-aos="zoom-out-up">
+              <Card.Img variant="top" src="https://i.pinimg.com/736x/4b/e0/f7/4be0f761c47b6ff9668baab3590911bb.jpg" />
+              </div>
               <Card.Body>
                 <Card.Title>Falooda</Card.Title>
                 <Button variant="primary">Add</Button>
@@ -77,10 +92,12 @@ const Menu = () => {
           </Col>
           <Col sm={12} md={6} lg={3} p={5} mb={4} className="mb-5">
             <Card style={{ width: '16rem' }}>
+              <div data-aos="zoom-out-up">
               <Card.Img variant="top" src="https://i.pinimg.com/736x/69/4f/68/694f68f3dc4eef86b9406f61adb486ec.jpg" />
+              </div>
               <Card.Body>
-                <Card.Title>IceCreame </Card.Title>
-                  <Button variant="primary">Add</Button>
+                <Card.Title>IceCream</Card.Title>
+                <Button variant="primary">Add</Button>
               </Card.Body>
             </Card>
           </Col>

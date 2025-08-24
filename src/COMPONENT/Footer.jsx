@@ -28,11 +28,11 @@ const Footer = () => {
                         <p>11:00 AM - 10:00 PM</p>
                     </Col>
                     <Col sm={12} md={6} lg={3} mb={5}>
-                        <a className="me-3" href="https://www.facebook.com/"><FaFacebook /></a>
-                        <a className="me-3" href="https://www.whatsapp.com/"><FaWhatsapp /></a>
-                        <a className="me-3" href="https://www.instagram.com/"><FaInstagram /></a>
-                        <a className="me-3" href="https://www.linkedin.com/"><FaLinkedin /></a>
-                        <a className="me-3" href="https://twitter.com/"><FaTwitter /></a>
+                        <a className="me-3" href="https://www.facebook.com/TheEateryGD/"><FaFacebook /></a>
+                        <a className="me-3" href="https://www.whatsapp.com/TheEateryGD"><FaWhatsapp /></a>
+                        <a className="me-3" href="https://www.instagram.com/TheEateryGD/"><FaInstagram /></a>
+                        <a className="me-3" href="https://www.linkedin.com/company/theeaterygd/"><FaLinkedin /></a>
+                        <a className="me-3" href="https://twitter.com/TheEateryGD"><FaTwitter /></a>
                         <br />
                         <br />
                         <p>Copyright © 2024 All rights reserved</p>
@@ -41,11 +41,7 @@ const Footer = () => {
                     </Col>
                 </Row>
             </Container>
-
-
-
-        </div>
+       </div>
     )
 }
-
 export default Footer

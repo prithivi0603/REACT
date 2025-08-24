@@ -2,14 +2,25 @@ import { Container, Col, Row, Button } from "react-bootstrap"
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 const Contact = () => {
+
+  const message = () => {
+    // e.preventDefault()
+    let name = document.getElementById("username").value
+    localStorage.setItem("name", name)
+    let email = document.getElementById("email").value
+    localStorage.setItem("email", email)
+    let message = document.getElementById("message").value
+    localStorage.setItem("message", message)
+  }
+
   return (
     <>
-    <div>
-      <h1 className="text-center mt-5">Contact Us</h1>
-      <p className="text-center">We would love to hear from you !</p>
-    </div>
+      <div>
+        <h1 className="text-center mt-5">Contact Us</h1>
+        <p className="text-center">We would love to hear from you !</p>
+      </div>
       <Container>
-        <Row className="mt-5" mb={5}>
+        <Row className="mt-5 mb-5">
           <Col sm={12} md={6} lg={6} className="mb-5">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.3337811297442!2d78.1051626737238!3d9.90613357464551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00cf9249646a6f%3A0x5281384977047d50!2sThe%20Eatery%20Town!5e0!3m2!1sen!2sin!4v1750242232605!5m2!1sen!2sin"
@@ -17,21 +28,24 @@ const Contact = () => {
               title="The Eatery Town Location" ></iframe>
           </Col >
           <Col sm={12} md={6} lg={6} mt={5}>
-          <div data-aos="flip-right">
-           <FloatingLabel controlId="floatingInput" label="Name" className="mb-3">
-              <Form.Control type="text" placeholder="name" name="username" />
-            </FloatingLabel>
-            <FloatingLabel controlId="floatingInput" label="Email address" className="mb-3">
-              <Form.Control type="email" placeholder="name@example.com" name="email" />
-            </FloatingLabel>
-            <FloatingLabel controlId="floatingTextarea" label="Tell about your order">
-              <Form.Control as="textarea" placeholder="Leave a comment here" name="message" style={{ height: '100px' }} />
-            </FloatingLabel>
-         <center><Button variant="danger" type="submit" className="mt-3">Message</Button></center>
-         </div>     
+          <h1 className="mb-5  text-center"> </h1>
+            <div data-aos="flip-right">
+              <form >
+                <FloatingLabel  label="Name" className="mb-3">
+                  <Form.Control type="text" placeholder="name" name="username" id="username" required />
+                </FloatingLabel>
+                <FloatingLabel  label="Email address" className="mb-3">
+                  <Form.Control type="email" placeholder="name@example.com" name="email" id="email" required />
+                </FloatingLabel>
+                <FloatingLabel  label="Tell about your order">
+                  <Form.Control as="textarea" placeholder="Leave a comment here" name="message" id="message" style={{ height: '100px' }} required />
+                </FloatingLabel>
+                <center><Button variant="danger"  type="sunmit" className="mt-3" onClick={message}>Message</Button></center>
+              </form>
+            </div>
           </Col>
         </Row>
-      </Container>
+      </Container >
     </>
   )
 }
