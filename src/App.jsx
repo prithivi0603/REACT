@@ -13,15 +13,15 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-      <Header />
+        <Header />
         <Routes>
-            <Route path='/' element={<Homepage/>}></Route>
-            <Route path="/Home" element={<Home/>}></Route>
-            <Route path="/About" element={<About/>}></Route>
-            <Route path="/Chef" element={<Chef/>}></Route>
-            <Route path="/Menu" element={<Menu/>}></Route>
-            <Route path="/Contact" element={<Contact />} ></Route>
-            <Route path="/Footer" element={<Footer />} ></Route>
+          <Route path='/' element={<Homepage />}></Route>
+          <Route path="/Home" element={<Home />}></Route>
+          <Route path="/About" element={<About />}></Route>
+          <Route path="/Chef" element={<Chef />}></Route>
+          <Route path="/Menu" element={<Menu />}></Route>
+          <Route path="/Contact" element={<Contact />} ></Route>
+          <Route path="/Footer" element={<Footer />} ></Route>
         </Routes>
       </BrowserRouter>
     </div>

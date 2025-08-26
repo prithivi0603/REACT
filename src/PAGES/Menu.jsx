@@ -1,7 +1,17 @@
 import { Col, Container, Row } from "react-bootstrap"
 import { Card, Button } from "react-bootstrap"
+import Cake from '../VIEWDETAILS/Cake'
+import Juice from "../VIEWDETAILS/Juice"
+import Browine from "../VIEWDETAILS/Browine"
+import Starbuck from "../VIEWDETAILS/Starbuck"
+import Pannacotta from "../VIEWDETAILS/Pannacotta"
+import Cappuccino from "../VIEWDETAILS/Cappuccino"
+import Falooda from "../VIEWDETAILS/Falooda"
+import Icecream from "../VIEWDETAILS/Icecream"
 
 const Menu = () => {
+
+
   return (
     <>
       <div className="text-center mt-5">
@@ -10,94 +20,101 @@ const Menu = () => {
       </div>
       <Container className="mt-5 mb-5">
         <Row className="text-center mt-4 d-flex justify-content-space-between mb-5">
-          <Col sm={12} md={6} lg={3} p={5} className="mb-5">
+          <Col sm={12} md={6} lg={3} className="mb-5 box">
             <Card style={{ width: '16rem' }}>
               <div data-aos="zoom-out-up">
                 <Card.Img variant="top" src="https://i.pinimg.com/1200x/35/fc/47/35fc471714a7bc4e48893fe0c3be61be.jpg" />
               </div>
               <Card.Body>
                 <Card.Title>Cakes</Card.Title>
-                <Button  className="me-2"  variant="secondary">View Details</Button>
-                <Button variant="primary" onClick={()=>{ }}>Add to Cart</Button>
+                <Cake />
+                <Button variant="primary" className="me-2 mt-2">Add to Cart</Button>
               </Card.Body>
             </Card>
           </Col>
-          <Col sm={12} md={6} lg={3} p={5} mt={4} className="mb-5">
+          <Col sm={12} md={6} lg={3} className="mb-5 box">
             <Card style={{ width: '16rem' }}>
               <div data-aos="zoom-out-up">
-              <Card.Img variant="top" src="https://i.pinimg.com/736x/93/8e/f1/938ef19d548cf9931368ccc9eda3ff6e.jpg" />
-           </div>
+                <Card.Img variant="top" src="https://i.pinimg.com/736x/93/8e/f1/938ef19d548cf9931368ccc9eda3ff6e.jpg" />
+              </div>
               <Card.Body>
                 <Card.Title>Fresh Juice</Card.Title>
-                <Button variant="primary">Add</Button>
+                <Juice/>
+                <Button variant="primary" className="me-2 mt-2">Add to cart</Button>
               </Card.Body>
             </Card>
           </Col>
-          <Col sm={12} md={6} lg={3} p={5} mt={4} className="mb-5">
+          <Col sm={12} md={6} lg={3} className="mb-5 box">
             <Card style={{ width: '16rem' }}>
               <div data-aos="zoom-out-up">
-              <Card.Img variant="top" src="https://i.pinimg.com/736x/2b/bd/8d/2bbd8ddef0efd324f26cadb9b0f4c17d.jpg" />
+                <Card.Img variant="top" src="https://i.pinimg.com/736x/2b/bd/8d/2bbd8ddef0efd324f26cadb9b0f4c17d.jpg" />
               </div>
               <Card.Body>
                 <Card.Title>Brownies</Card.Title>
-                <Button variant="primary">Add</Button>
+                <Browine/>
+                <Button variant="primary" className="me-2 mt-2  ">Add to Cart</Button>
               </Card.Body>
             </Card>
           </Col>
-          <Col sm={12} md={6} lg={3} p={5} mt={4} className="mb-5">
+          <Col sm={12} md={6} lg={3} className="mb-5 box">
             <Card style={{ width: '16rem' }}>
               <div data-aos="zoom-out-up">
-              <Card.Img variant="top" src="https://i.pinimg.com/1200x/b2/41/ba/b241ba6d024afa21328e70a1d6ba4dd2.jpg" />
+                <Card.Img variant="top" src="https://i.pinimg.com/1200x/2a/bd/93/2abd93d33194f4f50e1f563f547ebf66.jpg" />
               </div>
               <Card.Body>
-                <Card.Title>Starbucks Cold Coffee</Card.Title>
-                <Button variant="primary">Add</Button>
+                <Card.Title>Starbucks Coffee</Card.Title>
+                <Starbuck/>
+                <Button variant="primary" className="me-2 mt-2">Add to Cart</Button>
               </Card.Body>
             </Card>
           </Col>
         </Row>
-        <Row className="text-center mt-5 d-flex justify-content-space-between mb-4">
-          <Col sm={12} md={6} lg={3} p={5} mb={4} className="mb-5">
+        <Row className="text-center mt-5 d-flex justify-content-between mb-4">
+          <Col sm={12} md={6} lg={3} className="mb-5 box">
             <Card style={{ width: '16rem' }}>
               <div data-aos="zoom-out-up">
-              <Card.Img variant="top" src="https://i.pinimg.com/736x/ee/8a/f3/ee8af33f4fa782d924534b4b14b05247.jpg" />
+                <Card.Img variant="top" src="https://i.pinimg.com/736x/ee/8a/f3/ee8af33f4fa782d924534b4b14b05247.jpg" />
               </div>
               <Card.Body>
                 <Card.Title>Panna Cotta</Card.Title>
-                <Button variant="primary">Add</Button>
+                <Pannacotta/>
+                <Button variant="primary" className="me-2 mt-2" >Add to Cart</Button>
               </Card.Body>
             </Card>
           </Col>
-          <Col sm={12} md={6} lg={3} p={5} mb={4} className="mb-5">
+          <Col sm={12} md={6} lg={3} className="mb-5 box">
             <Card style={{ width: '16rem' }}>
               <div data-aos="zoom-out-up">
-              <Card.Img variant="top" src="https://i.pinimg.com/1200x/c4/73/7e/c4737e013a673e196416210867f9b1f8.jpg" />
+                <Card.Img variant="top" src="https://i.pinimg.com/1200x/c4/73/7e/c4737e013a673e196416210867f9b1f8.jpg" />
               </div>
               <Card.Body>
                 <Card.Title>Cappuccino</Card.Title>
-                <Button variant="primary">Add</Button>
+                <Cappuccino/>
+                <Button variant="primary" className="me-2 mt-2">Add to Cart</Button>
               </Card.Body>
             </Card>
           </Col>
-          <Col sm={12} md={6} lg={3} p={5} mb={4} className="mb-5">
+          <Col sm={12} md={6} lg={3} className="mb-5 box ">
             <Card style={{ width: '16rem' }}>
               <div data-aos="zoom-out-up">
-              <Card.Img variant="top" src="https://i.pinimg.com/736x/4b/e0/f7/4be0f761c47b6ff9668baab3590911bb.jpg" />
+                <Card.Img variant="top" src="https://i.pinimg.com/736x/4b/e0/f7/4be0f761c47b6ff9668baab3590911bb.jpg" />
               </div>
               <Card.Body>
                 <Card.Title>Falooda</Card.Title>
-                <Button variant="primary">Add</Button>
+                <Falooda/>
+                <Button variant="primary" className="me-2 mt-2">Add to Cart</Button>
               </Card.Body>
             </Card>
           </Col>
-          <Col sm={12} md={6} lg={3} p={5} mb={4} className="mb-5">
+          <Col sm={12} md={6} lg={3} className="mb-5 box">
             <Card style={{ width: '16rem' }}>
               <div data-aos="zoom-out-up">
-              <Card.Img variant="top" src="https://i.pinimg.com/736x/69/4f/68/694f68f3dc4eef86b9406f61adb486ec.jpg" />
+                <Card.Img variant="top" src="https://i.pinimg.com/736x/69/4f/68/694f68f3dc4eef86b9406f61adb486ec.jpg" />
               </div>
               <Card.Body>
                 <Card.Title>IceCream</Card.Title>
-                <Button variant="primary">Add</Button>
+                <Icecream/>
+                <Button variant="primary" className="me-2 mt-2">Add to Cart</Button>
               </Card.Body>
             </Card>
           </Col>

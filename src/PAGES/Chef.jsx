@@ -9,8 +9,8 @@ const Chef = () => {
         <p>THEY ARE NICE & FRIENDLY</p>
       </div>
       <Container>
-        <Row className='d-flex justify-content-space-between text-center'>
-          <Col sm={12} md={6} lg={3} p={5} >
+        <Row className='d-flex justify-content-space-between text-center '>
+          <Col sm={12} md={6} lg={3} p={5} className="mb-5 box">
             <Card style={{ width: '15rem' }}>
               <div data-aos="zoom-in">
                 <Card.Img variant="top" src="https://i.pinimg.com/736x/58/e8/43/58e843c46ee1a413f70fb0f72cdf87a4.jpg" />
@@ -26,7 +26,7 @@ const Chef = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col sm={12} md={6} lg={3} p={5}>
+          <Col sm={12} md={6} lg={3} p={5} g={5} className='mb-5 box'>
             <Card style={{ width: '15rem' }}>
               <div data-aos="zoom-in">
                 <Card.Img variant="top" src="https://i.pinimg.com/736x/1b/ec/a0/1beca0c5b7a98e531a80cf8992ce20a7.jpg" />
@@ -42,7 +42,7 @@ const Chef = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col sm={12} md={6} lg={3} g={5}>
+          <Col sm={12} md={6} lg={3} g={5} className='mb-5 box'>
             <Card style={{ width: '15rem' }}>
               <div data-aos="zoom-in">
                 <Card.Img variant="top" src="https://i.pinimg.com/736x/de/ae/d9/deaed979a64733c0938ab2b887fe6164.jpg" />
@@ -59,7 +59,7 @@ const Chef = () => {
             </Card>
           </Col>
           <Col sm={12} md={6} lg={3} g={5}>
-            <Card style={{ width: '15rem' }}>
+            <Card style={{ width: '15rem' }} className="mb-5 box">
               <div data-aos="zoom-in">
                 <Card.Img variant="top" src="https://i.pinimg.com/736x/b5/36/56/b53656d4c13bcb7cdf13bf5c49430873.jpg" />
               </div >
